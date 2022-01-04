@@ -14,12 +14,11 @@ export class AgregarNuevoComponent  {
 
   @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
-  agregar( ):void{
+  agregar( ){
     if(this.nuevo.nombre.trim().length === 0){
              return;
     }
 
-    console.log(this.nuevo);
     this.onNuevoPersonaje.emit(this.nuevo);
 
     this.nuevo = {nombre:'', poder:0}

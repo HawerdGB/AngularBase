@@ -21,11 +21,11 @@ export class MainPageComponent  {
   ];
 
   nuevo: Personaje = {
-  nombre: 'Pikolo',
-  poder: 9000
-  }
+    nombre: '',
+    poder: 0
+    }
 
-  agregarNuevoPersonaje( argumento: Personaje){
-    this.personajes.push( argumento);
+  agregarNuevoPersonaje( personaje: Personaje){
+    this.personajes.push( personaje);
   }
 }
